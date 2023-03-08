@@ -2,6 +2,7 @@
 
 def encode(password):
     new_pass = ""
+    #Cycles through each digit of the original password and encodes it before storing it in a new variable
     for i in password:
         if int(i) < 7:
             new_pass = new_pass + str(int(i) + 3)
